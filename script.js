@@ -1,19 +1,62 @@
-const messages = {
-  7: "Happy Birthday Saee 🎂💖 You make my world softer.",
-  8: "Rose Day 🌹 Just like you — beautiful.",
-  9: "Chocolate Day 🍫 Sweet days remind me of you.",
-  10: "Promise Day 🤞 I’ll always try my best for us.",
-  11: "Hug Day 🤍 Sending you the warmest hug.",
-  12: "Kiss Day 😘 One for you.",
-  13: "Will you be my Valentine? 💌",
-  14: "Happy Valentine’s Day ❤️ I choose you."
-};
-
-const today = new Date().getDate();
-const text = messages[today] || "Come back tomorrow 💫";
-
-document.getElementById("dayMessage").innerText = text;
-
-function comeBack() {
-  alert("I’ll be right here waiting 🦖💗");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  transition: background 0.8s ease;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.dino {
+  font-size: 60px;
+  margin-bottom: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #ff5e78;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
