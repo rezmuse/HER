@@ -1,64 +1,49 @@
-// 🔧 CHANGE THIS NUMBER TO TEST (7–14)
-const today = new Date().getDate();
-// const today = 7; // ← uncomment to test manually
-
-const title = document.getElementById("title");
-const message = document.getElementById("message");
-const dino = document.getElementById("dino");
-const body = document.body;
-
-if (today === 7) {
-  title.innerText = "Happy Birthday & Rose Day 🌹🎂";
-  message.innerText = "You were born today, and the world got better ❤️";
-  dino.innerText = "🦖🌹🎉";
-  body.style.background = "#ffb6c1";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Arial, sans-serif;
 }
 
-else if (today === 8) {
-  title.innerText = "Propose Day 💍";
-  message.innerText = "I choose you. Today and every day 💍❤️";
-  dino.innerText = "🦖😳";
-  body.style.background = "#ff9aa2";
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffd6e0;
+  transition: background 0.5s ease;
 }
 
-else if (today === 9) {
-  title.innerText = "Chocolate Day 🍫";
-  message.innerText = "Life is sweeter with you 🍫🤎";
-  dino.innerText = "🦖🍫";
-  body.style.background = "#d6a77a";
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
-else if (today === 10) {
-  title.innerText = "Teddy Day 🧸";
-  message.innerText = "If I were a teddy, I’d never leave you 🧸";
-  dino.innerText = "🦖🧸";
-  body.style.background = "#fbc2eb";
+#dino {
+  font-size: 60px;
+  margin-bottom: 15px;
 }
 
-else if (today === 11) {
-  title.innerText = "Promise Day 🤞";
-  message.innerText = "I promise to keep choosing you 🤞❤️";
-  dino.innerText = "🦖🤞";
-  body.style.background = "#a1c4fd";
+h1 {
+  margin-bottom: 15px;
 }
 
-else if (today === 12) {
-  title.innerText = "Hug Day 🤍";
-  message.innerText = "Sending you the biggest hug 🤍";
-  dino.innerText = "🦖🤍";
-  body.style.background = "#f5f5f5";
+p {
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
-else if (today === 13) {
-  title.innerText = "One Question… 👉👈";
-  message.innerText = "Will you be my Valentine? ❤️";
-  dino.innerText = "🦖😳";
-  body.style.background = "#ff9a9e";
-}
-
-else if (today === 14) {
-  title.innerText = "Happy Valentine’s Day ❤️";
-  message.innerText = "It’s always been you.";
-  dino.innerText = "🦖💖";
-  body.style.background = "#ff4d6d";
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #ff5e78;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }
