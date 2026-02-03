@@ -1,3 +1,4 @@
+// AUTO DATE (change to a number like 7 for testing)
 const today = new Date().getDate();
 
 const title = document.getElementById("dayTitle");
@@ -8,51 +9,18 @@ const dino = document.querySelector(".dino");
 
 const days = {
   7: {
-    title: "Happy Birthday 🎂❤️",
-    message: "Today is special… because YOU were born 🥺💖",
+    title: "Happy Birthday & Rose Day 🌹🎂",
+    message: "Today is extra special… you were born AND you’re my rose 🌹❤️",
     bg: "linear-gradient(135deg, #ff9a9e, #fad0c4)",
-    dino: "🦖🎉"
+    dino: "🦖🌹🎉"
   },
   8: {
-    title: "Rose Day 🌹",
-    message: "If I could, I’d give you all the roses in the world 🌹",
-    bg: "linear-gradient(135deg, #f857a6, #ff5858)",
-    dino: "🦖🌹"
+    title: "Propose Day 💍",
+    message: "I don’t need a special day to choose you… but today makes it official 💍❤️",
+    bg: "linear-gradient(135deg, #ff758c, #ff7eb3)",
+    dino: "🦖😳💍"
   },
   9: {
     title: "Chocolate Day 🍫",
-    message: "Life is sweeter with you. Always 🍫🤎",
-    bg: "linear-gradient(135deg, #8e2de2, #4a00e0)",
-    dino: "🦖🍫"
-  },
-  13: {
-    title: "One Question… 👉👈",
-    message: "Will you be my Valentine? ❤️",
-    bg: "linear-gradient(135deg, #ff758c, #ff7eb3)",
-    dino: "🦖😳"
-  },
-  14: {
-    title: "Happy Valentine’s Day 💘",
-    message: "You’re my favorite person. Always. ❤️",
-    bg: "linear-gradient(135deg, #ff512f, #dd2476)",
-    dino: "🦖💖"
-  }
-};
-
-// Apply day settings
-if (days[today]) {
-  title.innerText = days[today].title;
-  message.innerText = days[today].message;
-  body.style.background = days[today].bg;
-  dino.innerText = days[today].dino;
-}
-
-button.addEventListener("click", () => {
-  alert("I’ll be right here tomorrow 🦖❤️");
-});
-
-
-button:hover {
-  transform: scale(1.08);
-}
+    me
 
