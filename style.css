@@ -1,43 +1,40 @@
-body {
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(#ffd6e0, #fff);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
+const today = new Date().getDate();
+
+const title = document.getElementById("dayTitle");
+const message = document.getElementById("dayMessage");
+const button = document.getElementById("nextBtn");
+
+// DAY CONTENT (we will expand this later)
+const days = {
+  7: {
+    title: "Happy Birthday 🎂❤️",
+    message: "Today is special… because YOU were born 🥺💖"
+  },
+  8: {
+    title: "Rose Day 🌹",
+    message: "If I had a rose for every time I thought of you… I’d have a garden 🌹"
+  },
+  9: {
+    title: "Chocolate Day 🍫",
+    message: "Life is sweeter with you. Fact."
+  },
+  13: {
+    title: "One Question… 👉👈",
+    message: "Will you be my Valentine? ❤️"
+  },
+  14: {
+    title: "Happy Valentine’s Day 💘",
+    message: "You’re my favorite person. Always."
+  }
+};
+
+// DEFAULT (if date not listed)
+if (days[today]) {
+  title.innerText = days[today].title;
+  message.innerText = days[today].message;
 }
 
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-  width: 300px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
+button.addEventListener("click", () => {
+  alert("I’ll be waiting for you tomorrow 🦖❤️");
+});
 
-.dino {
-  font-size: 60px;
-  margin: 15px 0;
-  animation: bounce 1.5s infinite;
-}
-
-button {
-  background: #ff5c8d;
-  border: none;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-button:hover {
-  background: #ff3f78;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
