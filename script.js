@@ -1,5 +1,5 @@
 // AUTO DATE (change to a number like 7 for testing)
-const today = 7;
+const today = 4;
 
 
 const title = document.getElementById("dayTitle");
