@@ -1,40 +1,37 @@
-const today = new Date().getDate();
-
-const title = document.getElementById("dayTitle");
-const message = document.getElementById("dayMessage");
-const button = document.getElementById("nextBtn");
-
-// DAY CONTENT (we will expand this later)
 const days = {
   7: {
-    title: "Happy Birthday 🎂❤️",
-    message: "Today is special… because YOU were born 🥺💖"
+    title: "Happy Birthday & Rose Day 🌹🎂",
+    message: "Today is extra special… you were born AND you’re my rose 🌹❤️",
+    bg: "linear-gradient(135deg, #ff9a9e, #fad0c4)",
+    dino: "🦖🌹🎉"
   },
   8: {
-    title: "Rose Day 🌹",
-    message: "If I had a rose for every time I thought of you… I’d have a garden 🌹"
+    title: "Propose Day 💍",
+    message: "I don’t need a special day to choose you… but today makes it official 💍❤️",
+    bg: "linear-gradient(135deg, #ff758c, #ff7eb3)",
+    dino: "🦖😳💍"
   },
   9: {
     title: "Chocolate Day 🍫",
-    message: "Life is sweeter with you. Fact."
+    message: "Life is sweeter with you in it 🍫🤎",
+    bg: "linear-gradient(135deg, #8e2de2, #4a00e0)",
+    dino: "🦖🍫"
   },
-  13: {
-    title: "One Question… 👉👈",
-    message: "Will you be my Valentine? ❤️"
+  10: {
+    title: "Teddy Day 🧸",
+    message: "If I were a teddy, I’d never leave your arms 🧸❤️",
+    bg: "linear-gradient(135deg, #fbc2eb, #a6c1ee)",
+    dino: "🦖🧸"
   },
-  14: {
-    title: "Happy Valentine’s Day 💘",
-    message: "You’re my favorite person. Always."
-  }
-};
+  11: {
+    title: "Promise Day 🤞",
+    message: "I may mess up, but I promise to keep choosing you 🤞❤️",
+    bg: "linear-gradient(135deg, #a1c4fd, #c2e9fb)",
+    dino: "🦖🤞"
+  },
+  12: {
+    title: "Hug Day 🤍",
+    message: "Sending you the warmest hug through this screen 🤍",
+    bg: "linear-gradient(135deg, #fdfbfb, #ebedee)",
 
-// DEFAULT (if date not listed)
-if (days[today]) {
-  title.innerText = days[today].title;
-  message.innerText = days[today].message;
-}
-
-button.addEventListener("click", () => {
-  alert("I’ll be waiting for you tomorrow 🦖❤️");
-});
 
