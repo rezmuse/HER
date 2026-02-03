@@ -1,5 +1,6 @@
 // AUTO DATE (change to a number like 7 for testing)
-const today = new Date().getDate();
+const today = 7;
+
 
 const title = document.getElementById("dayTitle");
 const message = document.getElementById("dayMessage");
