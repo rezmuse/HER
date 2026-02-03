@@ -1,27 +1,50 @@
-// AUTO DATE (change to a number like 7 for testing)
-const today = 4;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Arial, sans-serif;
+}
 
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffd6e0;
+  transition: background 0.5s ease;
+}
 
-const title = document.getElementById("dayTitle");
-const message = document.getElementById("dayMessage");
-const button = document.getElementById("nextBtn");
-const body = document.body;
-const dino = document.querySelector(".dino");
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
 
-const days = {
-  7: {
-    title: "Happy Birthday & Rose Day 🌹🎂",
-    message: "Today is extra special… you were born AND you’re my rose 🌹❤️",
-    bg: "linear-gradient(135deg, #ff9a9e, #fad0c4)",
-    dino: "🦖🌹🎉"
-  },
-  8: {
-    title: "Propose Day 💍",
-    message: "I don’t need a special day to choose you… but today makes it official 💍❤️",
-    bg: "linear-gradient(135deg, #ff758c, #ff7eb3)",
-    dino: "🦖😳💍"
-  },
-  9: {
-    title: "Chocolate Day 🍫",
-    me
+#dino {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #ff5e78;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
 
