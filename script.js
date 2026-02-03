@@ -1,60 +1,56 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+const today = new Date().getDate();
+
+const title = document.getElementById("dayTitle");
+const message = document.getElementById("dayMessage");
+const button = document.getElementById("nextBtn");
+const body = document.body;
+const dino = document.querySelector(".dino");
+
+const days = {
+  7: {
+    title: "Happy Birthday 🎂❤️",
+    message: "Today is special… because YOU were born 🥺💖",
+    bg: "linear-gradient(135deg, #ff9a9e, #fad0c4)",
+    dino: "🦖🎉"
+  },
+  8: {
+    title: "Rose Day 🌹",
+    message: "If I could, I’d give you all the roses in the world 🌹",
+    bg: "linear-gradient(135deg, #f857a6, #ff5858)",
+    dino: "🦖🌹"
+  },
+  9: {
+    title: "Chocolate Day 🍫",
+    message: "Life is sweeter with you. Always 🍫🤎",
+    bg: "linear-gradient(135deg, #8e2de2, #4a00e0)",
+    dino: "🦖🍫"
+  },
+  13: {
+    title: "One Question… 👉👈",
+    message: "Will you be my Valentine? ❤️",
+    bg: "linear-gradient(135deg, #ff758c, #ff7eb3)",
+    dino: "🦖😳"
+  },
+  14: {
+    title: "Happy Valentine’s Day 💘",
+    message: "You’re my favorite person. Always. ❤️",
+    bg: "linear-gradient(135deg, #ff512f, #dd2476)",
+    dino: "🦖💖"
+  }
+};
+
+// Apply day settings
+if (days[today]) {
+  title.innerText = days[today].title;
+  message.innerText = days[today].message;
+  body.style.background = days[today].bg;
+  dino.innerText = days[today].dino;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
-  transition: background 0.8s ease;
-}
+button.addEventListener("click", () => {
+  alert("I’ll be right here tomorrow 🦖❤️");
+});
 
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  width: 90%;
-  max-width: 420px;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-.dino {
-  font-size: 60px;
-  margin-bottom: 10px;
-  animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-h1 {
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-button {
-  padding: 12px 22px;
-  border: none;
-  border-radius: 12px;
-  background: #ff5e78;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
 
 button:hover {
   transform: scale(1.08);
